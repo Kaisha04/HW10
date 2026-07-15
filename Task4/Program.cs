@@ -12,6 +12,14 @@ class Program
     static void Main()
     {
         MyList<int> test = new MyList<int>();
+        test.Add(1);
+        test.Add(2);
+        test.Add(3);
+        int[] array = test.GetArray<int>();
+        foreach (int i in array)
+        {
+            Console.WriteLine(i);
+        }
     }
 }
 
